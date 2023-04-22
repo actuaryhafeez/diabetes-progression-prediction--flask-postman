@@ -50,6 +50,10 @@ You can test the Flask app by sending a POST request to the /predict_diabetes en
         "S5": 0.019908,
         "S6": -0.017646
     }
+    
+ ### Postman Request 
+ ![postman](https://user-images.githubusercontent.com/55107467/233799799-d45b90b2-da63-4542-9d68-d4abc269b9e4.png)
+
 
 ## Project Structure 
 
