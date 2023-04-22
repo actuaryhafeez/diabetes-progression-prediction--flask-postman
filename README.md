@@ -15,10 +15,10 @@ The model is served using a Flask app that listens for POST requests at the /pre
 You can test the Flask app by sending a POST request to the /predict_diabetes endpoint using Postman. The request should contain the input data as a JSON object.
 
 # Files
-* pima-indians-diabetes.csv: The data set used to train the machine learning model.
+* diabetes.csv: The data set used to train the machine learning model.
 * notebook.ipynb: A Jupyter Notebook that contains the code used to train the machine learning model.
 * app.py: The Flask app that serves the machine learning model.
-* finalized_model.sav: The saved machine learning model.
+* finalized_model.pkl: The saved machine learning model.
 * README.md: This file.
 
 # How to Use
@@ -36,7 +36,6 @@ You can test the Flask app by sending a POST request to the /predict_diabetes en
     jupyter notebook
 ### Start the Flask server by running the command python app.py in the terminal.
     flask run
-### Open a web browser and navigate to http://localhost:5000 to access the home page of the application.
 ### Send a POST request to http://localhost:5000/predict_diabetes using Postman, with the input data as a JSON object. Data is preprocessed. 
 
     {
@@ -51,12 +50,6 @@ You can test the Flask app by sending a POST request to the /predict_diabetes en
         "S5": 0.019908,
         "S6": -0.017646
     }
-       
-             
-    
-    AGE SEX BMI BP S1 S2 S3 S4 S5 S6
-
-
 
 ## Project Structure 
 
@@ -79,16 +72,12 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 This project adheres to the [Open Source Initiative's](https://opensource.org) definition of open source software and the [Open Source Initiative's Approved License List](https://opensource.org/licenses/alphabetical).
 
 
-
-
-### Clone the repository to your local machine.
-    
-### Open a terminal and navigate to the project directory.
-### Install the required packages using pip install -r requirements.txt.
-### Start the Flask app using python app.py.
-
 # References
+
 Diabetes Data Set: https://www4.stat.ncsu.edu/~boos/var.select/diabetes.tab.txt
+
 Flask: https://flask.palletsprojects.com/
+
 scikit-learn: https://scikit-learn.org/
+
 pickle: https://docs.python.org/3/library/pickle.html
